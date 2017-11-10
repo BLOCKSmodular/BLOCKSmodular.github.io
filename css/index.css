@@ -231,11 +231,6 @@ p.copy {
 	/*background-color: blue;*/
 }
 
-ul.icn_area {
-	margin-top: 38px;
-	margin-right: 100px;
-}
-}
 
 /* 481px～768px */
 @media screen and (max-width : 768px) {
@@ -349,7 +344,7 @@ ul.icn_area {
 	margin-top: 38px;
 	margin-right: 35px;
 }
-}
+
 
 
 
