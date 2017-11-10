@@ -58,7 +58,7 @@ body {
 	/*background-color: red;*/
 }
 
-img.logo_rsb {
+img.logo_bm {
 	float: left;
 	max-height: 100px;
 }
@@ -115,7 +115,7 @@ p.text_2 {
 .bg {
 	width: 100%;
 	height: 100%;
-	background: url(../img/rsb_fn.png);
+	background: url(../img/bm_fn.png);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -133,7 +133,7 @@ p.text_2 {
 	/*background-color: red;*/
 }	
 
-img.logo_rsb {
+img.logo_bm {
 	float: left;
 	max-height: 85px;
 }
@@ -192,7 +192,7 @@ img.close_btn {
 	/*background-color: red;*/
 }	
 
-img.logo_rsb {
+img.logo_bm {
 	float: left;
 	max-height: 120px;
 }
@@ -223,7 +223,7 @@ p.copy {
 .bg {
 	width: auto;
 	height: 100%;
-	background: url(../img/rsb_fn.png);
+	background: url(../img/bm_fn.png);
 	background-size: contain;
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -260,7 +260,7 @@ ul.icn_area {
 	/*background-color: red;*/
 }	
 
-img.logo_rsb {
+img.logo_bm {
 	float: left;
 	max-height: 70px;
 }
@@ -285,7 +285,7 @@ p.copy {
 .bg {
 	width: auto;
 	height: 100%;
-	background: url(../img/rsb_fn.png);
+	background: url(../img/bm_fn.png);
 	background-size: contain;
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -310,7 +310,7 @@ ul.icn_area {
 	/*background-color: red;*/
 }	
 
-img.logo_rsb {
+img.logo_bm {
 	float: none;
 	max-height: 80px;
 	padding-bottom: 30px;
@@ -337,7 +337,7 @@ p.copy {
 .bg {
 	width: auto;
 	height: 100%;
-	background: url(../img/rsb_fn.png);
+	background: url(../img/bm_fn.png);
 	background-size: contain;
 	background-position: bottom center;
 	background-repeat: no-repeat;
