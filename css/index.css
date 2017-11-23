@@ -277,7 +277,7 @@ img.logo_bm {
 	border-width: 30px;
 	box-sizing: border-box;*/
 	overflow: scroll;
-	padding: 50px;
+	padding: 30px;
 }	
 
 /*	LEFT AREA
@@ -332,7 +332,7 @@ width: 448px;
 .logo {
 	width: 100%;
 	float: none;
-	padding: 50px 0 70px 0;
+	padding: 50px 0 0px 0;
 	display: table;
 	/*background-color: red;*/
 }	
