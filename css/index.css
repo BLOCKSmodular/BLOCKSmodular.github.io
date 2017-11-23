@@ -13,9 +13,10 @@ html, body {
 body {
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 100%;
-	color: #fff;
+	color: #000;
 	background-color: #fff;
 	z-index: 1;
+
 }
 
 
@@ -33,15 +34,27 @@ body {
 }
 
 #main_container {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	/*border: solid #fff;*/
 	/*border-width: 20px;*/
 	/*box-sizing: border-box;*/
-	overflow: scroll;
-	padding: 0 0 0 50px;
+	/*overflow: scroll;*/
+	padding: 100px 100px 200px 150px;
+	text-align: center;
 }
+
+/*#background,#background-front {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    width: auto; 
+    min-width: 100%; 
+    height: 0;
+    min-height: 100%;
+    z-index: -1;
+}*/
 
 .footer{
 
@@ -51,25 +64,38 @@ body {
 /*	LEFT AREA
 ----------------------------------------------------*/
 .left_area {
-	width: 40%;
+	width: 100%;
 	height: 100%;
-	float: left;
+	float: center;
 }
 
 .logo {
+	position: fixed;
 	width: 100%;
 	float: left;
-	padding: 38px 0 38px 0;
+	padding: 0px 0px 0px 0px;
 	display: table;
 	/*background-color: red;*/
 }
+
+
 
 img.logo_bm {
 	float: left;
 	max-height: 100px;
 }
 
-p.copy {
+.gitlink{
+	position: fixed;
+	color:white;
+	letter-spacing: 2px;
+	font-size:40px;
+	padding-top: 120px;
+}
+
+
+
+/*p.copy {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 21px;
@@ -81,14 +107,30 @@ p.copy {
 	vertical-align: middle;
 	text-align: right;
 	left: 16px;
-	/*background-color: yellow;*/
+	/*background-color: yellow;
+}*/
+.iframe{
+width: 800px;
+  height: 450px;
+
 }
 
-
+.iframe-wrapper {
+	position: relative;
+	padding-bottom: 80%;
+	height: 0;
+	overflow: hidden;}
+.iframe-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;}
 
 p.text_1 {
 	width: 100%;
 	height: auto;
+	padding-top: 30px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-weight: light;
@@ -98,71 +140,77 @@ p.text_1 {
 	/*background-color: yellow;*/
 }
 
-p.text_2 {
-	width: 100%;
-	height: auto;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	font-weight: light;
-	line-height: 27px;
-	letter-spacing: 1px;
-	padding-bottom: 50px;
-	/*background-color: yellow;*/
-}
-
-/*	RIGHT AREA
-----------------------------------------------------*/
-.right_area {
-	width: 60%;
-	height: 100%;
-	float: left;	
-}
-
 .bg {
-	width: 90%;
-	height: 90%;
-	padding: 30px 0 0px 0;
-	background: url(../img/bm_fn.png);
+	width: 100%;
+	height: 100%;
+	padding: 0px 0px 0px 0px; 
+	background: url(../img/bm_fn_new2.png);
 	background-size: contain;
-	background-position: center center;
+	background-position: top;
 	background-repeat: no-repeat;
 	/*background-color: blue;*/
+	text-align: center;
+
 }
 
 
 /* 960px〜1366px */
 @media screen and (max-width : 1366px) {
+
+
 .logo {
+	position: fixed;
 	width: 100%;
 	float: left;
-	padding: 38px 0 38px 0;
+	padding: 0px 0px 0px 0px;
 	display: table;
 	/*background-color: red;*/
 }	
+.gitlink{
+	position: fixed;
+	color:white;
+	letter-spacing: 2px;
+	font-size:40px;
+	padding-top: 115px;
+}
 
 img.logo_bm {
 	float: left;
 	max-height: 85px;
 }
 
-p.copy {
-	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	font-weight: bold;
-	line-height: 30px;
-	letter-spacing: 1px;
-	padding-left: 10px;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: right;
-	left: 16px;
-	/*background-color: yellow;*/
+.iframe-wrapper{
+width: 70%;
+height: 70%;
+float : center;
+padding: 150px 0 38px 0;
+
 }
+
+
 }
 
 /* 768px〜960px */
 @media screen and (max-width : 960px) {
+.logo {
+	position: relative;
+	width: 100%;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	display: table;
+	text-align: left;
+	/*background-color: red;*/
+}	
+.gitlink{
+	position: relative;
+	color:white;
+	letter-spacing: 2px;
+	font-size:40px;
+	padding-top: 125px;
+
+
+}
+
 img.close_btn {
 	position: absolute;
 	top: 0;
@@ -172,29 +220,29 @@ img.close_btn {
 	cursor: pointer;
 }
 
-#main_container {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	border: solid #fff;
-	border-width: 30px;
-	box-sizing: border-box;
-	overflow: scroll;
-	padding: 100px;
-}	
+.iframe-wrapper{
+width: 70%;
+height: 70%;
+float : center;
+padding: 150px 0 38px 0;
+
+}
+
+
 
 /*	LEFT AREA
 ----------------------------------------------------*/
 .left_area {
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	float: none;
 }
 
 .logo {
+	position: fixed;
 	width: 100%;
 	float: left;
-	padding: 38px 0 38px 0;
+	padding: 0px 0px 0px 0px;
 	display: table;
 	/*background-color: red;*/
 }	
@@ -204,39 +252,19 @@ img.logo_bm {
 	max-height: 120px;
 }
 
-p.copy {
-	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
-	font-weight: bold;
-	line-height: 42px;
-	letter-spacing: 1px;
-	padding-left: 35px;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: right;
-	left: 20px;
-	/*background-color: yellow;*/
-}
-
-/*	RIGHT AREA
-----------------------------------------------------*/
-.right_area {
-	width: 100%;
-	height: 100%;
-	float: none;	
-}
 
 .bg {
-	width: auto;
+	width: 100%;
 	height: 100%;
-	background: url(../img/bm_fn.png);
+	background: url(../img/bm_fn_new2.png);
 	background-size: contain;
 	background-position: bottom center;
 	background-repeat: no-repeat;
-	margin: -120px 50px 0 0;
+	margin: 0px 0px 0 0;
 	/*background-color: blue;*/
 }
+
+
 
 
 /* 481px～768px */
@@ -245,9 +273,9 @@ p.copy {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	border: solid #fff;
+	/*border: solid #fff;
 	border-width: 30px;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 	overflow: scroll;
 	padding: 50px;
 }	
@@ -255,50 +283,47 @@ p.copy {
 /*	LEFT AREA
 ----------------------------------------------------*/
 .logo {
+	position: relative;
 	width: 100%;
 	float: left;
 	padding: 80px 0 60px 0;
 	display: table;
 	/*background-color: red;*/
 }	
+.gitlink{
+	position: relative;
+	color:white;
+	letter-spacing: 2px;
+	font-size:40px;
+	padding-top: 0px;
+	text-align: left;
+
+
+}
 
 img.logo_bm {
 	float: left;
 	max-height: 70px;
 }
 
-p.copy {
-	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 24px;
-	letter-spacing: 1px;
-	padding-left: 10px;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: right;
-	left: 14px;
-	/*background-color: yellow;*/
+.iframe{
+width: 448px;
+  height: 270px;
+
 }
 
-/*	RIGHT AREA
-----------------------------------------------------*/
-.bg {
-	width: auto;
-	height: 100%;
-	background: url(../img/bm_fn.png);
-	background-size: contain;
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	margin: -280px 50px 0 0;
-	/*background-color: blue;*/
-}
-
-ul.icn_area {
-	margin-top: 38px;
-	margin-right: 45px;
-}
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding: calc(315 / 560 * 100%) 0 0;
+  }
+  .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 
@@ -318,42 +343,22 @@ img.logo_bm {
 	padding-bottom: 30px;
 }
 
-p.copy {
-	position: relative;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 30px;
-	letter-spacing: 1px;
-	padding-left: 0;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: left;
-	left: 0px;
-	float: left;
-	/*background-color: yellow;*/
-}
 
-/*	RIGHT AREA
-----------------------------------------------------*/
+
 .bg {
 	width: auto;
 	height: 100%;
-	background: url(../img/bm_fn.png);
+	background: url(../img/bm_fn_new2.png);
 	background-size: contain;
-	background-position: bottom center;
+	background-position: top;
 	background-repeat: no-repeat;
-	margin: -60px 20px 0 0;
+	margin: 20px 20px 0 0;
 	/*background-color: blue;*/
 }
 
-ul.icn_area {
-	margin-top: 38px;
-	margin-right: 35px;
+
+
 }
-
-
-
 
 
 
