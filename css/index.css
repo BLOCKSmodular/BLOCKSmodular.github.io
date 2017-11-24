@@ -41,7 +41,7 @@ body {
 	/*border-width: 20px;*/
 	/*box-sizing: border-box;*/
 	/*overflow: scroll;*/
-	padding: 100px 100px 200px 150px;
+	padding: 100px 100px 150px 50px;
 	text-align: center;
 }
 
@@ -70,12 +70,12 @@ body {
 }
 
 .logo {
+	max-width: 80%;
 	position: fixed;
-	width: 100%;
 	float: left;
 	padding: 0px 0px 0px 0px;
 	display: table;
-	/*background-color: red;*/
+	/*background-color: black;*/
 }
 
 
@@ -91,6 +91,18 @@ img.logo_bm {
 	letter-spacing: 2px;
 	font-size:40px;
 	padding-top: 120px;
+	padding-left: 200px
+	z-index: 20;
+}
+
+.ani{
+	width: 5%;
+	height: 5%;
+	position: absolute;
+    top: 0;
+    padding-top: 115px;
+    padding-left: 45px;
+    z-index: -1;
 }
 
 
@@ -133,7 +145,7 @@ p.text_1 {
 	padding-top: 30px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
-	font-weight: light;
+	font-weight: bold;
 	line-height: 24px;
 	letter-spacing: 0.5px;
 	clear: both;
@@ -192,27 +204,41 @@ padding: 150px 0 38px 0;
 
 /* 768px〜960px */
 @media screen and (max-width : 960px) {
-.logo {
+#main_container {
 	position: relative;
+	width: 100%;
+	height: 100%;
+	/*border: solid #fff;*/
+	/*border-width: 20px;*/
+	/*box-sizing: border-box;*/
+	/*overflow: scroll;*/
+	padding: 100px 100px 200px 150px;
+	text-align: left;
+}
+
+.logo {
+	position: fixed;
 	width: 100%;
 	float: left;
 	padding: 0px 0px 0px 0px;
 	display: table;
 	text-align: left;
-	/*background-color: red;*/
+	/*background-color: black;*/
 }	
 .gitlink{
-	position: relative;
+	position: fixed;
 	color:white;
 	letter-spacing: 2px;
-	font-size:40px;
+	font-size:28px;
 	padding-top: 125px;
+	padding-left: 150px;
 
 
 }
 
 img.close_btn {
-	position: absolute;
+
+	position: fixed;
 	top: 0;
 	right: 0;
 	margin-right: 20px;
@@ -238,21 +264,6 @@ padding: 150px 0 38px 0;
 	float: none;
 }
 
-.logo {
-	position: fixed;
-	width: 100%;
-	float: left;
-	padding: 0px 0px 0px 0px;
-	display: table;
-	/*background-color: red;*/
-}	
-
-img.logo_bm {
-	float: left;
-	max-height: 120px;
-}
-
-
 .bg {
 	width: 100%;
 	height: 100%;
@@ -265,7 +276,7 @@ img.logo_bm {
 }
 
 
-
+}
 
 /* 481px～768px */
 @media screen and (max-width : 768px) {
@@ -294,10 +305,19 @@ img.logo_bm {
 	position: relative;
 	color:white;
 	letter-spacing: 2px;
-	font-size:40px;
+	font-size:45px;
 	padding-top: 0px;
-	text-align: left;
 
+}
+
+.ani{
+	width: 5%;
+	height: 5%;
+	position: absolute;
+    top: 0;
+    padding-top: 0px;
+    padding-left: 45px;
+    z-index: -1;
 
 }
 
@@ -329,19 +349,7 @@ width: 448px;
 
 /*	LEFT AREA
 ----------------------------------------------------*/
-.logo {
-	width: 100%;
-	float: none;
-	padding: 50px 0 0px 0;
-	display: table;
-	/*background-color: red;*/
-}	
 
-img.logo_bm {
-	float: none;
-	max-height: 80px;
-	padding-bottom: 30px;
-}
 
 
 
