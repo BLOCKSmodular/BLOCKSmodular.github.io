@@ -293,6 +293,12 @@ padding: 150px 0 38px 0;
 
 /*	LEFT AREA
 ----------------------------------------------------*/
+
+.left_area {
+	width: 88%;
+	height: 100%;
+	float: none;
+}
 .logo {
 	position: relative;
 	width: 100%;
